@@ -1,0 +1,15 @@
+==22015== Memcheck, a memory error detector
+==22015== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==22015== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==22015== Command: ./../src/main input/sensors_print_hard_1.dat
+==22015== Parent PID: 22014
+==22015== 
+==22015== 
+==22015== HEAP SUMMARY:
+==22015==     in use at exit: 0 bytes in 0 blocks
+==22015==   total heap usage: 35 allocs, 35 frees, 13,708 bytes allocated
+==22015== 
+==22015== All heap blocks were freed -- no leaks are possible
+==22015== 
+==22015== For lists of detected and suppressed errors, rerun with: -s
+==22015== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

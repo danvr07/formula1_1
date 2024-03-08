@@ -1,0 +1,15 @@
+==22757== Memcheck, a memory error detector
+==22757== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==22757== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==22757== Command: ./../src/main input/sensors_analyse_5.dat
+==22757== Parent PID: 22756
+==22757== 
+==22757== 
+==22757== HEAP SUMMARY:
+==22757==     in use at exit: 0 bytes in 0 blocks
+==22757==   total heap usage: 993 allocs, 993 frees, 44,132 bytes allocated
+==22757== 
+==22757== All heap blocks were freed -- no leaks are possible
+==22757== 
+==22757== For lists of detected and suppressed errors, rerun with: -s
+==22757== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,299 @@
+==22227== Memcheck, a memory error detector
+==22227== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==22227== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==22227== Command: ./../src/main input/sensors_clear_hard_5.dat
+==22227== Parent PID: 22226
+==22227== 
+==22227== Invalid read of size 16
+==22227==    at 0x108CF8: clear (functii.h:31)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Address 0x4a4b3a0 is 256 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid write of size 8
+==22227==    at 0x108CFC: clear (functii.h:31)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Address 0x4a4b380 is 224 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid free() / delete / delete[] / realloc()
+==22227==    at 0x486A318: realloc (vg_replace_malloc.c:1451)
+==22227==    by 0x108D3F: clear (functii.h:34)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Address 0x4a4b2a0 is 0 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 4
+==22227==    at 0x1093F8: main (main.c:143)
+==22227==  Address 0x4a4b3a0 is 256 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x109414: main (main.c:144)
+==22227==  Address 0x4a4b3a8 is 264 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x108C9C: clear (functii.h:26)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Address 0x4a4b438 is 408 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x108CB4: clear (functii.h:27)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Address 0x4a4b428 is 392 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid free() / delete / delete[] / realloc()
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Address 0x4a4b2a0 is 0 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x109504: main (main.c:161)
+==22227==  Address 0x4a4cca8 is 6,664 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x108C9C: clear (functii.h:26)
+==22227==    by 0x10958F: main (main.c:171)
+==22227==  Address 0x4a4ccb8 is 6,680 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x108CB4: clear (functii.h:27)
+==22227==    by 0x10958F: main (main.c:171)
+==22227==  Address 0x4a4cca8 is 6,664 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid free() / delete / delete[] / realloc()
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x10958F: main (main.c:171)
+==22227==  Address 0x4a4b2a0 is 0 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 16
+==22227==    at 0x108CF8: clear (functii.h:31)
+==22227==    by 0x10958F: main (main.c:171)
+==22227==  Address 0x4a4ccc0 is 6,688 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid write of size 8
+==22227==    at 0x108CFC: clear (functii.h:31)
+==22227==    by 0x10958F: main (main.c:171)
+==22227==  Address 0x4a4cca0 is 6,656 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid free() / delete / delete[] / realloc()
+==22227==    at 0x486A318: realloc (vg_replace_malloc.c:1451)
+==22227==    by 0x108D3F: clear (functii.h:34)
+==22227==    by 0x10958F: main (main.c:171)
+==22227==  Address 0x4a4b2a0 is 0 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 4
+==22227==    at 0x109250: main (main.c:106)
+==22227==  Address 0x4a4b2a0 is 0 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x109270: main (main.c:107)
+==22227==  Address 0x4a4b2a8 is 8 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 4
+==22227==    at 0x10967C: main (main.c:181)
+==22227==  Address 0x4a4b2b0 is 16 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x10960C: main (main.c:182)
+==22227==  Address 0x4a4b2a8 is 8 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x109628: main (main.c:183)
+==22227==  Address 0x4a4b2b8 is 24 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x109314: main (main.c:117)
+==22227==  Address 0x4a4cb88 is 6,376 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x108D7C: memfree (functii.h:42)
+==22227==    by 0x1096BB: main (main.c:191)
+==22227==  Address 0x4a4b2b8 is 24 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid read of size 8
+==22227==    at 0x108D94: memfree (functii.h:43)
+==22227==    by 0x1096BB: main (main.c:191)
+==22227==  Address 0x4a4b2a8 is 8 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== Invalid free() / delete / delete[] / realloc()
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108D83: memfree (functii.h:42)
+==22227==    by 0x1096BB: main (main.c:191)
+==22227==  Address 0x4a61d50 is 0 bytes inside a block of size 16 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108D83: memfree (functii.h:42)
+==22227==    by 0x1096BB: main (main.c:191)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108F9B: main (main.c:51)
+==22227== 
+==22227== Invalid free() / delete / delete[] / realloc()
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108D9B: memfree (functii.h:43)
+==22227==    by 0x1096BB: main (main.c:191)
+==22227==  Address 0x4a61d00 is 0 bytes inside a block of size 16 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108D9B: memfree (functii.h:43)
+==22227==    by 0x1096BB: main (main.c:191)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108ECB: main (main.c:32)
+==22227== 
+==22227== Invalid free() / delete / delete[] / realloc()
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108DBF: memfree (functii.h:45)
+==22227==    by 0x1096BB: main (main.c:191)
+==22227==  Address 0x4a4b2a0 is 0 bytes inside a block of size 14,592 free'd
+==22227==    at 0x4867ADC: free (vg_replace_malloc.c:884)
+==22227==    by 0x108CC3: clear (functii.h:28)
+==22227==    by 0x1094EF: main (main.c:158)
+==22227==  Block was alloc'd at
+==22227==    at 0x4865168: malloc (vg_replace_malloc.c:393)
+==22227==    by 0x108E6B: main (main.c:25)
+==22227== 
+==22227== 
+==22227== HEAP SUMMARY:
+==22227==     in use at exit: 0 bytes in 0 blocks
+==22227==   total heap usage: 1,008 allocs, 1,281 frees, 1,367,052 bytes allocated
+==22227== 
+==22227== All heap blocks were freed -- no leaks are possible
+==22227== 
+==22227== For lists of detected and suppressed errors, rerun with: -s
+==22227== ERROR SUMMARY: 565737 errors from 26 contexts (suppressed: 0 from 0)
